@@ -259,7 +259,7 @@ Our services include website development, Local SEO, online booking systems, Wha
 <h2>Book Free Consultation</h2>
 <div class="card">
 
-<form name="consultation" method="POST" data-netlify="true">
+<form name="consultation" method="POST" data-netlify="true  data-netlify-recaptcha="true">
 <input type="hidden" name="form-name" value="consultation">
 
 <input type="text" name="name" placeholder="Your Name" required>
@@ -268,8 +268,7 @@ Our services include website development, Local SEO, online booking systems, Wha
 <textarea name="message" placeholder="Tell us about your requirement"></textarea>
 
 <!-- ReCAPTCHA placeholder intact -->
-<div class="g-recaptcha" data-sitekey="6LeeQGwsAAAAAPfZVdnrE0qLg4_e7fm2eaBNxwUa"></div>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div data-netlify-recaptcha="true"></div>
 
 <button type="submit" style="background:#22c55e;color:#fff;padding:10px 20px;border:none;border-radius:8px;">
 Submit
@@ -316,4 +315,5 @@ else reply.innerHTML="Please contact us on WhatsApp for detailed info.";
 
 </body>
 </html>
+
 
